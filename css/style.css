@@ -1,3 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700");
+body {
+  background-color: #FAFAFA;
+}
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__title {
+  color: #0a0a0a;
+  font-family: "Roboto", sans-serif;
+  display: inline;
+  padding: 1em;
+  margin: 0;
+}
+
+.projects {
+  margin: 2em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.project {
+  width: 20em;
+  background-color: white;
+  height: auto;
+  border-radius: 2em;
+  box-shadow: 0 0.2em 0.5em rgba(150, 150, 150, 0.2196078431);
+}
+.project__title {
+  padding: 1em;
+  color: #0a0a0a;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.project:hover {
+  animation: cardhover 100ms both alternate;
+}
+
+@keyframes cardhover {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

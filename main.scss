@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700');
+@import "./sass/utils/variables";
+@import "./sass/utils/mixins";
+
+body {
+    background-color: $clr-bg;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__title {
+        @include text;
+        display: inline;
+        padding: 1em;
+        margin: 0;
+    }
+}
+
+.projects {
+    margin: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.project {
+    width: 20em;
+    background-color: white;
+    height: auto;
+    border-radius: 2em;
+    @include shadow;
+    &__title {
+        padding: 1em;
+        @include text;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    &:hover {
+        animation: cardhover 100ms both alternate;
+    }
+}
+
+@keyframes cardhover {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}

@@ -1,0 +1,8 @@
+@mixin text {
+    color: #0a0a0a;
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin shadow {
+    box-shadow: 0 0.2em 0.5em #96969638;
+}
