@@ -1,0 +1,20 @@
+{
+  "name": "e-portfolio",
+  "version": "1.0.0",
+  "description": "This is my e-portfolio. This contains my projects as well as my completed courses.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./main.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KBerliner/portfolio.git"
+  },
+  "author": "Kyle Berliner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KBerliner/portfolio/issues"
+  },
+  "homepage": "https://github.com/KBerliner/portfolio#readme"
+}
